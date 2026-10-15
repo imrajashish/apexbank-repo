@@ -1,0 +1,17 @@
+server:
+  port:9000
+spring:
+  application:
+    name: auth-service
+  dataSource:
+    url: jdbc:postgresql://localhost:5432/authdb
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+  flyway:
+    enabled: true
+    location: classpath:/db.migration
+
